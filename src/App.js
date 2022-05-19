@@ -1,23 +1,43 @@
+
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import List from './component/List';
+import withListLoading from './component/withListLoading';
+
+// test mc files
+import("./magecart/magecart").then(magecart => {console.log('lol import')});
+import("./magecart/magecart2").then(magecart => {console.log('lol import')});
+import("./magecart/magecart3").then(magecart => {console.log('lol import')});
+import("./magecart/magecartreq").then(magecart => {console.log('lol import')});
+
+
+// test secrets files
+import("./misc/misc").then(magecart => {console.log('lol import')});
+
 
 function App() {
+  const ListLoading = withListLoading(List);
+  const [appState, setAppState] = useState({loading: false, repos: null})
+
+  useEffect(() => {
+    setAppState({loading: true});
+    const apiUrl = 'https://api.github.com/users/JordanJunn/repos';
+    fetch(apiUrl)
+    .then((res) => res.json())
+    .then((repos) => {
+      setAppState({loading: false, repos: repos});
+    });
+  }, [setAppState]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+        <h1>My Repos</h1>
+      </div>
+      <div className='repo-container'>
+        <ListLoading isLoading={appState.loading} repos={appState.repos}/>
+      </div>
     </div>
   );
 }
