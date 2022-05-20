@@ -6,6 +6,7 @@ import List from './component/List';
 import withListLoading from './component/withListLoading';
 
 // test mc files
+import("./magecart/magecart1.js").then(magecart => {magecart});
 import("./magecart/magecart2").then(magecart => {console.log('lol import')});
 import("./magecart/magecart3").then(magecart => {console.log('lol import')});
 import("./magecart/magecartreq").then(magecart => {console.log('lol import')});
