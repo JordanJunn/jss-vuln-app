@@ -21,7 +21,6 @@ const auth0Config = {
   domain: "example.auth0.com",
 };
 
-// CDN and DNS Configuration
 const cloudflareConfig = {
   apiToken: "AmXzE2gEo5Kcy_7XtZjoR0wTjB9bh12rSbbjSeXh",
   apiKey: "2e98e1c0b7dd48bf3d926c91b2e40580124c2",
