@@ -22,7 +22,7 @@ const auth0Config = {
 };
 
 const cloudflareConfig = {
-  apiToken: "AmXzE2gEo5Kcy_7XtZjoR0wTjB9bh12rSbbjSeXh",
+  apiToken: "r0eQOnYw5XLVkqjqEFMc7xIPaepZi8gersDk1XiO",
   apiKey: "2e98e1c0b7dd48bf3d926c91b2e40580124c2",
   zoneId: "023e105f4ecef8ad9ca31a8372d0c353",
   accountEmail: "admin@example.com",
