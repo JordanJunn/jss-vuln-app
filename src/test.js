@@ -22,7 +22,7 @@ const auth0Config = {
 };
 
 // wow a comment again
-const cloudflareConfig = {
+const cloudflare_Config = {
   apiToken: "r0eQOnYw5XLVkqjqEFMc7xIPaepZi8gersDk1XiO",
   apiKey: "2e98e1c0b7dd48bf3d926c91b2e40580124c2",
   zoneId: "023e105f4ecef8ad9ca31a8372d0c353",
