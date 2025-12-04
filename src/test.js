@@ -21,7 +21,7 @@ const auth0Config = {
   domain: "example.auth0.com",
 };
 
-// wow a comment
+// wow a comment again
 const cloudflareConfig = {
   apiToken: "r0eQOnYw5XLVkqjqEFMc7xIPaepZi8gersDk1XiO",
   apiKey: "2e98e1c0b7dd48bf3d926c91b2e40580124c2",
