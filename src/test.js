@@ -21,7 +21,6 @@ const auth0Config = {
   domain: "example.auth0.com",
 };
 
-// wow a comment again
 const cloudflare_Config = {
   zoneId: "023e105f4ecef8ad9ca31a8372d0c353",
   api_Token: "r0eQOnYw5XLVkqjqEFMc7xIPaepZi8gersDk1XiO",
